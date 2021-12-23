@@ -6,12 +6,12 @@ public class TraineeDAO {
 
 	public void printAll() {
 		for (int i = 0; i < details.length; i++) {
-			if (details[i] != null) {
-				System.out.println(details[i]);
+			if (details[i].getName() != null || details[i].getTraineeID() != 0 || details[i].getContactNumber() != 0) {
+				if (details[i] != null) {
+					System.out.println(details[i]);
+				}
 			}
 		}
-		System.out.println();
-		System.out.println();
 	}
 
 	public void save(TraineeDetails details) {

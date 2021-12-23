@@ -67,7 +67,7 @@ public class Tester {
 
 		dao.printAll();
 
-		System.out.println(dao.delete("Radhika"));
+		System.out.println(dao.delete("Jyothi"));
 		dao.printAll();
 
 		details9.setTraineeID(110);
