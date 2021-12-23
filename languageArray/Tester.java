@@ -30,6 +30,8 @@ public class Tester {
 		System.out.println(languages.delete("C++"));
 		System.out.println(languages.delete("C Sharp"));
 
+		languages.update("PHP", "php");
+
 		languages.printAll();
 
 	}

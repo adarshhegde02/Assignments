@@ -24,13 +24,25 @@ public class Languages {
 
 	public String delete(String language) {
 		for (int i = 0; i < programLanguage.length; i++) {
-			if (programLanguage[i].equals(language)) {
-				programLanguage[i] = null;
-				return "Language is removed form the list...";
+			if (programLanguage[i] != null) {
+				if (programLanguage[i].equals(language)) {
+					programLanguage[i] = null;
+					return "Language is removed form the list...";
+				}
 			}
 		}
 		return "Language is not removed from the list...";
 	}
 
+	public String update(String oldName, String newName) {
+		for (int i = 0; i < programLanguage.length; i++) {
+			if (programLanguage[i].equals(oldName)) {
+				programLanguage[i] = newName;
+				return "Language updated";
+			}
+		}
+		return "Language not updated";
+
+	}
 
 }
