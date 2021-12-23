@@ -8,7 +8,7 @@ public class Tester {
 		months.save("February");
 		months.save("March");
 		months.save("April");
-		months.save("May");
+		months.save("may");
 		months.save("June");
 		months.save("July");
 		months.save("August");
@@ -16,9 +16,12 @@ public class Tester {
 		months.save("October");
 		months.save("November");
 		months.save("December");
+
 		months.printAll();
 		months.save("jan");
 		System.out.println(months.delete("July"));
+
+		months.update("may", "May");
 		months.printAll();
 
 	}
